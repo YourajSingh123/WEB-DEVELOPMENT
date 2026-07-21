@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS BoxModel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .Box {
+            background-color: cadetblue;
+        }
+
+        .box1{
+            color: pink;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid red;
+            height: 100px;
+            box-sizing: border-box;
+        }
+
+        .box2{
+            color: chartreuse;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid chocolate;
+            height: 100px;
+            box-sizing: border-box;
+        }
+
+        .box3{
+            color: orange;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid lawngreen;
+            height: 100px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="Box box1">let's learn about Box Model.</div>
+    <div class="Box box2">It describes structure of an elements as a rectangular box,</div>
+    <div class="Box box3">that has content, padding, a border and a margin.</div>
+</body>
+</html>
