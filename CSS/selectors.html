@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selectors */
+        div {
+            color: firebrick;
+        }
+
+        /* Class Selectors */
+        .red {
+            color: red;
+        }
+
+        /* ID Selectors */
+        #green {
+            background-color: green;
+        }
+
+        /* Child Selectors */
+        div > p {
+            color: fuchsia;
+            background-color: gold;
+        }
+
+        /* Descendant Selectors */
+        div p {
+            color: blue;
+            background-color: gold;
+        }
+
+        /* Universal Selectors */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Pseudo Selectors */
+        a:visited {
+            color: lime;
+        }
+
+        a:link {
+            color: blueviolet;
+        }
+
+        a:active {
+            background-color: aqua;
+        }
+
+        a:hover {
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="green">
+        Let's learn about this...
+    </div>
+
+    <div class="red">
+        Selector is a pattern used to select HTML elements
+        <article>
+            <p>that we want to style</p>
+        </article>
+    </div>
+
+    <a href="https://github.com/YourajSingh123/WEB-DEVELOPMENT">Go to my repo</a>
+    <br>
+    <a href="https://www.cricbuzz.com/">Open Cricbuzz</a>
+</body>
+</html>
