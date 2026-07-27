@@ -1,0 +1,63 @@
+<!-- Design a colorful nav bar and use CSS variables-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Exercise 4</title>
+   <style>
+      /* :root {
+         --primary-color: rgb(153, 169, 29);
+         --text-color: aliceblue;
+         --secondary-color: rgb(210, 90, 15);
+      } */
+
+      :root {
+         --primary-color: rgb(20, 100, 197);
+         --text-color: aliceblue;
+         --secondary-color: rgb(15, 168, 210);
+      }
+
+      body {
+         background-color: var(--secondary-color);
+      }
+
+      * {
+         margin: 0;
+         padding: 0;
+         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+
+      nav {
+         background-color: var(--primary-color);
+         padding: 15px;
+      }
+
+      ul li {
+         list-style: none;
+         display: inline;
+         padding: 20px;
+         font-weight: bolder;
+      }
+
+      ul li a {
+         color: var(--text-color);
+         text-decoration: none;
+      }
+   </style>
+</head>
+
+<body>
+   <header>
+      <nav>
+         <ul>
+            <li><a href="/">Home</li></a>
+            <li><a href="/">About</li></a>
+            <li><a href="/">Services</li></a>
+            <li><a href="/">Contact Us</li></a>
+            <li><a href="/">More Info..</li></a>
+         </ul>
+      </nav>
+   </header>
+</body>
+</html>
