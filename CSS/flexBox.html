@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <style>
+        .container {
+            border: 3px solid red;
+            display: flex;
+            height: 70vh;
+            /* justify-content: center; */
+            align-items: center;
+            /* flex-direction: column;
+            flex-direction: column-reverse; */
+            /* flex-wrap: wrap; */
+            /* align-content: flex-start; */
+            /* flex-flow: row wrap; */
+            /* gap: 25px;
+            row-gap: 10px;
+            column-gap: 10px; */
+            gap: 15px 25px;
+        }
+
+        .item {
+            height: 70px;
+            width: 70px;
+            border: 2px solid black;
+            /* margin: 4px; */
+            background-color: rgb(179, 93, 12);
+            /* flex-grow: 1; */
+        }
+
+        .order-1 {
+            order: 1;
+        }
+        .order-2 {
+            order: 2;
+        }
+
+        .item1 {
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
+        }
+
+        .item2{
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="item item1">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item order-1">4</div>
+            <div class="item item2">5</div>
+            <div class="item">6</div>
+            <div class="item order-2">7</div>
+            <div class="item">8</div>
+        </div>
+    </main>
+</body>
+</html>
