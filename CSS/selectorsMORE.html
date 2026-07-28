@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child {
+            background-color: blueviolet;
+        } */
+
+        /* .box::first-line {
+            color: aqua;
+        } */
+
+        /* .boxes * {
+            color: brown;
+            border: 3px solid magenta;
+        } */
+
+        /* attribute selectors
+        [data-color="primary"]{
+            padding-top: 30px;
+            background-color: aquamarine;
+        }   */
+
+        /* grouping of selectors
+        p, a, .box, [data-color="primary"]{
+            padding-top: 30px;
+            background-color: aquamarine;
+        }   */
+
+        /* .box:nth-child(even) {
+            background-color: cadetblue;
+        } */
+
+        /* .box:nth-last-child(1) {
+            background-color: crimson;
+        } */
+
+        .boxes::before {
+            content: "Yuvi Bhai!!..";
+            color: rgb(206, 203, 11);
+        }
+
+        .boxes::after {
+            content: "OK BYE!!..";
+            color: cornflowerblue;
+        }
+
+        ::selection {
+            background-color: blue;
+            color: crimson;
+        }
+
+        .box::first-letter {
+            background-color: coral;
+            color: blue;
+            font-size: 30px;
+        }
+
+        label {
+            color: rgb(109, 222, 17);
+        }
+
+        input::placeholder {
+            color: rgb(72, 105, 105);
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Hey I am 1st BOX...</div>
+        <div class="box">Hey I am 2nd BOX...</div>
+        <div class="box">Hey I am 3rd BOX...</div>
+        <label for="username">Enter name: </label>
+        <input type="text" id="username" name="username" placeholder="type your name">
+    </div>
+</body>
+</html>
