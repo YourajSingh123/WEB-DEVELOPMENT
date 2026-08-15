@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        .box{
+            height: 60px;
+            width: 60px;
+            background-color: chartreuse;
+            border: 2px solid brown;
+
+            /* transform: rotate(45deg); */
+            /* transform: rotate(0.125turn); */
+            /* transform-origin: -50% -50%; */
+            /* transform: rotateX(60deg); */
+            /* transform: rotateY(75deg); */
+            /* transform: rotateZ(10deg); */
+
+            /* transform: scaleX(1.8); */
+            /* transform: scaleY(1.8); */
+            /* transform: scale3d(1.8); */
+
+            /* transform: skew(30deg); */
+            /* transform: skewX(30deg); */
+            /* transform: skewY(30deg); */
+
+            /* transform: translate(80%); */
+            /* transform: translateX(80%); */
+            /* transform: translateY(80%); */
+
+            transform: translateX(40%) skewX(45deg) translateY(60%);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            height: 80vh;
+            width: 90vw;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>
