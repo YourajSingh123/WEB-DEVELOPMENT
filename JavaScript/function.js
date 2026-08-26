@@ -17,6 +17,7 @@ sum1(4, 5);
 
 
 function sum(k, l, m = 2){
+    console.log(k, l, m);
     return k+l+m;
 }
 
@@ -26,3 +27,12 @@ ans3 = sum(9, 6, 4);
 console.log("the sum of the no is: " + ans1);
 console.log("the sum of the no is: " + ans2);
 console.log("the sum of the no is: " + ans3);
+
+// Arrow Function
+const fun1 = (x)=> {
+    console.log("the arrow function is:", x);
+}
+
+fun1(10);
+fun1(20);
+fun1(30);
