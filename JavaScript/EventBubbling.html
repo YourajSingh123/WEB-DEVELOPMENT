@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: burlywood;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .childC {
+            background-color: chartreuse;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        .Cont {
+            background-color: darkblue;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Cont">
+        <section class="childC">
+            <div class="child">
+                Mai halku hu re...
+            </div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("hello..");
+        })
+
+        document.querySelector(".childC").addEventListener("click", (e) => {
+            e.stopPropagation();
+            alert("ka hal ba..");
+        })
+
+        document.querySelector(".Cont").addEventListener("click", () => {
+            alert("bak bur..");
+        })
+
+
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        
+        // let a = setInterval(() => {
+        //     document.querySelector(".childC").style.background = getRandomColor();
+        // }, 1000);
+        // console.log(a);
+
+        let a = setTimeout(() => {
+            document.querySelector(".childC").style.background = getRandomColor();
+        }, 1000);
+        console.log(a);
+
+        //setInterval ko rokne k liye clearInterval aur setTimeout k liye clearTimeout use krte hai!!
+    </script>
+</body>
+
+</html>
